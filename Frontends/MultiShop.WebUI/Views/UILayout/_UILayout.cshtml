@@ -1,0 +1,33 @@
+﻿@model List<ResultCategoryDto>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadUILayoutComponentPartial")
+
+<body>
+    <!-- Topbar Start -->
+    @await Component.InvokeAsync("_TopbarUILayoutComponentPartial")
+
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial") 
+    
+
+    
+    @await Component.InvokeAsync("_URLDirectoryAlertUILayoutComponentPartial")
+
+    <!-- Navbar End -->
+    <!-- Breadcrumb Start -->
+    @RenderBody()
+
+    @await Component.InvokeAsync("_FooterUILayoutComponentPartial")
+    @await Component.InvokeAsync("_ScriptsUILayoutComponentPartial")
+
+
+</body>
+
+</html>

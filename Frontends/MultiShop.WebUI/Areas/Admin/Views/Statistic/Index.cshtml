@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box">
+                <div class="media-icon pull-left"><i class="fa fa-flag"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Marka</h5>
+                    <h3>@ViewBag.getBrandCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-sea">
+                <div class="media-icon pull-left"><i class="fa fa-cogs"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Ürün</h5>
+                    <h3>@ViewBag.getProductCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-blue">
+                <div class="media-icon pull-left"><i class="fa fa-th-large"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Kategori</h5>
+                    <h3>@ViewBag.getCategoryCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-green">
+                <div class="media-icon pull-left"><i class="fa fa-usd"></i> </div>
+                <div class="media-info">
+                    <h5>Ortalama Ürün Fiyatı</h5>
+                    <h3>254.38 ₺</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box">
+                <div class="media-icon pull-left"><i class="fa fa-dollar-sign"></i> </div>
+                <div class="media-info">
+                    <h5>En Pahalı Ürün</h5>
+                    <h3>@ViewBag.getMaxPriceProductName</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-sea">
+                <div class="media-icon pull-left"><i class="fa fa-tag"></i> </div>
+                <div class="media-info">
+                    <h5>En Ucuz Ürün</h5>
+                    <h3>@ViewBag.getMinPriceProductName</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-blue">
+                <div class="media-icon pull-left"><i class="fa fa-users"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Kullanıcı</h5>
+                    <h3>@ViewBag.getUserCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-green">
+                <div class="media-icon pull-left"><i class="fa fa-comments"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Yorum</h5>
+                    <h3>@ViewBag.getTotalCommentCount</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box">
+                <div class="media-icon pull-left"><i class="fa fa-commenting"></i> </div>
+                <div class="media-info">
+                    <h5>Aktif Yorum</h5>
+                    <h3>@ViewBag.getActiveCommentCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-sea">
+                <div class="media-icon pull-left"><i class="fa fa-comment-slash"></i> </div>
+                <div class="media-info">
+                    <h5>Pasif Yorum</h5>
+                    <h3>@ViewBag.getPassiveCommentCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-blue">
+                <div class="media-icon pull-left"><i class="fa fa-gift"></i> </div>
+                <div class="media-info">
+                    <h5>İndirim Kuponu Sayısı</h5>
+                    <h3>@ViewBag.getDiscountCouponCount</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-green">
+                <div class="media-icon pull-left"><i class="fa fa-envelope"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Mesaj Sayısı</h5>
+                    <h3>@ViewBag.getMessageTotalCount</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box">
+                <div class="media-icon pull-left"><i class="fa fa-star"></i> </div>
+                <div class="media-info">
+                    <h5>Ayın Müşterisi</h5>
+                    <h3>Meltem Yıldız</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-sea">
+                <div class="media-icon pull-left"><i class="fa fa-shopping-cart"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Alışveriş Tutarı</h5>
+                    <h3>27</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-blue">
+                <div class="media-icon pull-left"><i class="fa fa-tag"></i> </div>
+                <div class="media-info" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <h5>Günün İndirimli Ürünü</h5>
+                    <h3>Bebek Mamaları</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-green">
+                <div class="media-icon pull-left"><i class="fa fa-tshirt"></i> </div>
+                <div class="media-info" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <h5>Son Eklenen Marka</h5>
+                    <h3>Mavi Jeans</h3>                        
+                 </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box">
+                <div class="media-icon pull-left"><i class="fa fa-image"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Görsel Sayısı</h5>
+                    <h3>246</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-sea">
+                <div class="media-icon pull-left"><i class="fa fa-cash-register"></i> </div>
+                <div class="media-info">
+                    <h5>Toplam Tutar</h5>
+                    <h3>48.987 ₺</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-blue">
+                <div class="media-icon pull-left"><i class="fa fa-money-bill-alt"></i> </div>
+                <div class="media-info">
+                    <h5>Bugünkü Satış</h5>
+                    <h3>14.268 ₺</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="media-box bg-green">
+                <div class="media-icon pull-left"><i class="fa fa-shopping-bag"></i> </div>
+                <div class="media-info">
+                    <h5>Son Satış Tutarı</h5>
+                    <h3>591 ₺</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
