@@ -29,7 +29,7 @@ namespace MultiShop.WebUI.Controllers
 
             SmtpClient client = new SmtpClient();
             client.Connect("smtp.gmail.com", 587, false);
-            client.Authenticate("iskitoglu.berk@gmail.com", "fcsnvyskzxmvslrr");
+            client.Authenticate("iskitoglu.berk@gmail.com", "");
             client.Send(mimeMessage);
             client.Disconnect(true);
             return View();
